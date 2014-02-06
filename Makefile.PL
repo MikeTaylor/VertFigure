@@ -11,4 +11,12 @@ WriteMakefile(
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT       => 'Generate schematic illustrations of vertebral columns',
        AUTHOR         => 'Mike Taylor <mike@miketaylor.org.uk>') : ()),
+    EXE_FILES        => [ 'bin/vcd2svg' ],
 );
+
+sub MY::postamble { q[
+%.svg: %.vcd vcd2svg
+	rm -f $@
+	m4 $< | perl -I lib bin/vcd2svg - > $@
+	chmod 444 $@
+]; }
