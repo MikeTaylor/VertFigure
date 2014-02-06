@@ -1,3 +1,9 @@
+vcd2vsg -- generate schematic illustrations of vertebral columns
+Copyright 2013-2014 Mike Taylor <mike@miketaylor.org.uk>
+Licensed under the Gnu General Public Licence v3.0
+
+--
+
 This project contains vcd2svg, a program for generating schematic
 illustrations of vertebral columns, visually similar to that of
 Wedel (2009:supplementary figure 1):
@@ -7,7 +13,7 @@ It was first written to make Wedel and Taylor (2013a: figure 9):
 
 Input is in the VCD (Vertebral Column Description) format, which is
 defined for the first time in this project (but not yet documented).
-One such input (the one we used for the 2013 paper) is bifurcation.vcd
+One such input (the one we used for the 2013 paper) is "pbj.vcd"
 
 These files are translated into SVG by the vcd2svg script.
 This is written in Perl, using the SVG library.
