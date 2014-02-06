@@ -1,0 +1,13 @@
+Changes
+LICENSE
+MANIFEST
+Makefile.PL
+README
+bin/vcd2svg
+examples/bifurcation/bifurcation.vcd
+examples/pbj/pbj-phylogeny.svg
+examples/pbj/pbj-phylogeny.tre
+examples/pbj/pbj.vcd
+lib/VCD.pm
+lib/VCD/Taxon.pm
+t/VCD.t
