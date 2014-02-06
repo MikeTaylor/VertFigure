@@ -1,9 +1,13 @@
-This directory contains the source code for generating
-birfurcatograms, visually similar to Wedel (2009:supp. fig. 1):
-https://svpow.files.wordpress.com/2009/02/wedel-2009-supplementary-fig-1.jpg
+This project contains vcd2svg, a program for generating schematic
+illustrations of vertebral columns, visually similar to that of
+Wedel (2009:supplementary figure 1):
+	https://svpow.files.wordpress.com/2009/02/wedel-2009-supplementary-fig-1.jpg
+It was first written to make Wedel and Taylor (2013a: figure 9):
+	https://svpow.files.wordpress.com/2013/03/wedel-and-taylor-2013-bifurcation-figure-9-bifurcatogram.jpg
 
-Input is in VCD (Vertebral Column Description) format.
-One such input (the one we need for this project) is bifurcation.vcd
+Input is in the VCD (Vertebral Column Description) format, which is
+defined for the first time in this project (but not yet documented).
+One such input (the one we used for the 2013 paper) is bifurcation.vcd
 
 These files are translated into SVG by the vcd2svg script.
 This is written in Perl, using the SVG library.
