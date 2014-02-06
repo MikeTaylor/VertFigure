@@ -1,6 +1,7 @@
 Changes
 LICENSE
 MANIFEST
+MANIFEST.SKIP
 Makefile.PL
 README
 bin/vcd2svg
