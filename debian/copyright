@@ -1,0 +1,13 @@
+Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?view=markup&pathrev=135
+Maintainer: Mike Taylor <mike@miketaylor.org.uk>
+Source: https://github.com/MikeTaylor/vcd2svg
+Name: VCD
+
+Files: *
+Copyright: 2013-2014, Mike Taylor <mike@miketaylor.org.uk>
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2014, Mike Taylor <mike@miketaylor.org.uk>
+License: GPL-3+
+ As specified in https://www.gnu.org/licenses/gpl-3.0.txt
