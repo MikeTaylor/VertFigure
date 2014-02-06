@@ -1,4 +1,4 @@
-package Taxon;
+package VCD::Taxon;
 
 use strict;
 use warnings;

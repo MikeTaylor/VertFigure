@@ -1,9 +1,9 @@
-package VCD;
+package VCD::VCD;
 
 use strict;
 use warnings;
 use IO::File;
-use Taxon;
+use VCD::Taxon;
 
 
 sub new {
@@ -44,13 +44,13 @@ sub parse {
 	    next;
 	}
 	if ($key eq "taxon" && keys %fields > 1) {
-	    push @{ $this->{taxa} }, new Taxon(%fields);
+	    push @{ $this->{taxa} }, new VCD::Taxon(%fields);
 	    %fields = ();
 	}
 	$fields{$key} = $value;
     }
 
-    push @{ $this->{taxa} }, new Taxon(%fields);
+    push @{ $this->{taxa} }, new VCD::Taxon(%fields);
     $f->close();
 }
 
