@@ -1,4 +1,4 @@
-package VCD::VCD;
+package VCD;
 
 use strict;
 use warnings;
