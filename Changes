@@ -1,0 +1,6 @@
+Revision history for Perl extension VCD.
+
+0.01  Thu Feb  6 11:12:35 2014
+	- original version; created by h2xs 1.23 with options
+		-X -n VCD -a --skip-exporter
+
