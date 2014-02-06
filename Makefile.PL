@@ -10,5 +10,5 @@ WriteMakefile(
     }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT       => 'Generate schematic illustrations of vertebral columns',
-       AUTHOR         => 'Mike Taylor <mike@>') : ()),
+       AUTHOR         => 'Mike Taylor <mike@miketaylor.org.uk>') : ()),
 );
