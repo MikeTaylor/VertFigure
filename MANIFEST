@@ -4,6 +4,7 @@ MANIFEST
 Makefile.PL
 README
 bin/vcd2svg
+debian
 examples/bifurcation/bifurcation.vcd
 examples/pbj/pbj-phylogeny.svg
 examples/pbj/pbj-phylogeny.tre
