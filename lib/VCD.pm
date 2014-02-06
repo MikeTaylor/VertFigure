@@ -6,6 +6,9 @@ use IO::File;
 use VCD::Taxon;
 
 
+our $VERSION = 0.1;
+
+
 sub new {
     my $class = shift();
     my($filename) = @_;
