@@ -1,5 +1,14 @@
 Revision history for Perl extension VCD.
 
+TODO
+	- Move more of the functionality in the bin/vcd2svg script
+	  down into the library.
+	- Documentation for the script.
+	- Documentation for the library.
+	- Documentation for the VCD file format.
+	- Documentation of the examples.
+	- Add ability to draw atlas/axis shapes.
+
 0.2  [IN PROGRESS]
 
 0.1  Thu Feb  6 11:12:35 2014
