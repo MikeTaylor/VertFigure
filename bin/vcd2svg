@@ -157,3 +157,50 @@ sub compile_points {
 
     return $text;
 }
+
+
+=head1 NAME
+
+vcd2svg - generate schematic illustrations of vertebral columns
+
+=head1 SYNOPSIS
+
+vcd2svg
+[
+-d
+]
+I<VCD--file>
+
+=head1 DESCRIPTION
+
+C<vcd2svg>
+reads a named file in VCD (Vertebral Column Description) format, and
+writes an illustration of the described vertebral columns in SVG
+(Scalable Vector Graphics) format. This is useful for preparing
+illustrations of scientific papers about vertebrates.
+
+=head1 OPTIONS
+
+=over 4
+
+=item -d
+
+Dump information about the parsed VCD file rather than rendering an
+illustration. This is useful only for debugging, ensuring that the
+input is interpreted as expected.
+
+=back
+
+=head1 SEE ALSO
+
+VCD::Format - description of the input file format.
+
+=head1 AUTHOR
+
+Copyright (C) 2013-2014 by Mike Taylor E<lt>mike@miketaylor.org.ukE<gt>
+
+=head1 LICENSE
+
+GNU General Public Licence v3.0
+
+=cut
