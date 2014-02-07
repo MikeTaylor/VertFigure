@@ -10,4 +10,4 @@ License: GPL-3+
 Files: debian/*
 Copyright: 2014, Mike Taylor <mike@miketaylor.org.uk>
 License: GPL-3+
- As specified in https://www.gnu.org/licenses/gpl-3.0.txt
+ /usr/share/common-licenses/GPL-3
