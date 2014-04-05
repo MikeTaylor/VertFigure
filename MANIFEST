@@ -5,6 +5,7 @@ MANIFEST.SKIP
 Makefile.PL
 README
 bin/vcd2svg
+examples/README
 examples/bifurcation/bifurcation.vcd
 examples/pbj/pbj-phylogeny.svg
 examples/pbj/pbj-phylogeny.tre
