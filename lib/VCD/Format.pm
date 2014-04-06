@@ -179,7 +179,9 @@ i.e. those after the anchor point.
 
 The font family to be used for captions, including taxa and specimen
 numbers. Taxon names are rendered in the italic variant of the font,
-specimen numbers in the regular font.
+specimen numbers in the regular font. To inhibit the use of italics
+for a taxon name (e.g. because it's a clade or family rather than a
+genus or species), precede it with a forward slash (C</>).
 
 The font family may be specified by a list of family-names, as in SVG
 and CSS.
@@ -193,9 +195,13 @@ The font size to be used for captions.
 
 The height of the entire picture to be generated.
 
-=item C<state-X-color> I<>
+=item C<state-X-color> I<color>
 
-###
+The states of individual vertebra, represented by single characters
+and indicated by C<Data> lines, are defined by C<state-X-color> and
+C<state-X-polygon> pairs of settings. C<state-X-color> specifies what
+color to use for drawing vertebrae of the state corresponding with the
+characters I<X>.
 
 =item C<state-X-polygon> I<>
 
