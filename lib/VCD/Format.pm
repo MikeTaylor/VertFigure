@@ -96,23 +96,98 @@ columns will be horizontally aligned in the output.
 
 =head1 CONFIGURATION SETTINGS
 
-*background
-*box-color
-*cervical-height
-*cervical-width
-*cervico-dorsal-color
-*cervico-dorsal-offset
-*dorsal-height-gradient
-*dorsal-height
-*dorsal-width
-*font-family
-*font-size
-*height
-*state-X-color
-*state-X-polygon
-*taxon-height
-*text-y-offset
-*width
+Each of these properties has a single global setting, which applies
+across all taxa in the diagram. If a setting is set for a second time,
+the new value replaces the old.
+
+The following settings are recognised:
+
+=over 4
+
+=item C<background> I<color>
+
+If specified, then the emitted SVG file has a solid background in the
+specified colour; otherwise, it is transparent.
+
+The value can be any string that is interpreted as identifying a color
+in SVG -- for example, a name such as B<red> or an RGB triple such as
+C<rgb(0,193,252)>.
+
+=item C<box-color> I<color> [default: C<grey>]
+
+The color of the boxes that outline each vertebra. Can be removed
+altogether by setting it to the same as the background colour.
+
+=item C<cervical-height> I<length>
+
+###
+
+=item C<cervical-width> I<>
+
+###
+
+=item C<cervico-dorsal-color> I<>
+
+###
+
+=item C<cervico-dorsal-offset> I<>
+
+###
+
+=item C<dorsal-height-gradient> I<>
+
+###
+
+=item C<dorsal-height> I<>
+
+###
+
+=item C<dorsal-width> I<>
+
+###
+
+=item C<font-family> I<>
+
+###
+
+=item C<font-size> I<>
+
+###
+
+=item C<height> I<>
+
+###
+
+=item C<state-X-color> I<>
+
+###
+
+=item C<state-X-polygon> I<>
+
+###
+
+=item C<taxon-height> I<>
+
+###
+
+=item C<text-y-offset> I<>
+
+###
+
+=item C<width> I<>
+
+###
+
+=back
+
+=head1 EXAMPLES
+
+See
+C<examples/bifurcation/bifurcation.vcd>
+and
+C<examples/pbj/pbj.vcd>
+in the distributon. (Note that the latter must be preprocessed by the
+m4 macro processor.)
 
 =head1 SEE ALSO
 
