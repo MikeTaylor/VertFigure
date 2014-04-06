@@ -92,6 +92,12 @@ that is particular interest, such as the cervicodorsal transition, or
 the dorsosacral transition. The anchor points of all the vertebral
 columns will be horizontally aligned in the output.
 
+For consistency, in the configuration settings below this anchor point
+is always referred to as the "cervico-dorsal" transition, the
+vertebrae before it are referred to as "cervicals" and those after it
+as "dorsals". But since these terms do not appear in the output, the
+anchor point may be used as a different transition.
+
 =back
 
 =head1 CONFIGURATION SETTINGS
@@ -110,8 +116,9 @@ If specified, then the emitted SVG file has a solid background in the
 specified colour; otherwise, it is transparent.
 
 The value can be any string that is interpreted as identifying a color
-in SVG -- for example, a name such as B<red> or an RGB triple such as
+in SVG -- for example, a name such as C<red> or an RGB triple such as
 C<rgb(0,193,252)>.
+See http://www.w3.org/TR/SVG11/types.html#Color
 
 =item C<box-color> I<color> [default: C<grey>]
 
@@ -120,43 +127,71 @@ altogether by setting it to the same as the background colour.
 
 =item C<cervical-height> I<length>
 
-###
+The height of the boxes drawn to contain "cervical" vertebrae,
+i.e. those before the anchor point.
 
-=item C<cervical-width> I<>
+The value can be any string that is interpreted as identifying a
+length in SVG -- for example,
+C<2em>,
+C<100px>
+or
+C<2.4cm>.
+See http://www.w3.org/TR/SVG11/types.html#Length
 
-###
+=item C<cervical-width> I<length>
 
-=item C<cervico-dorsal-color> I<>
+The width of the boxes drawn to contain "cervical" vertebrae,
+i.e. those before the anchor point.
 
-###
+=item C<cervico-dorsal-color> I<color>
 
-=item C<cervico-dorsal-offset> I<>
+If specified, this is the colour in which the vertical line through
+the cervical-dorsal anchor points of the aligned vertebral columns is
+drawn; otherwise, no line is drawn.
 
-###
+=item C<cervico-dorsal-offset> I<length>
 
-=item C<dorsal-height-gradient> I<>
+The offset of the cervico-dorsal anchor point across the area of the
+drawing. Should between 0 and I<width>.
 
-###
+=item C<dorsal-height-gradient> I<length>
 
-=item C<dorsal-height> I<>
+If defined, the height of each successive dorsal vertebra exceeds that
+of its predecessor by the specified amount. Can be used to produce
+increasingly tall (or increasingly short if negative) dorsal
+vertebrae.
 
-###
+There is currently no corresponding C<cervical-height-gradient>
+setting.
 
-=item C<dorsal-width> I<>
+=item C<dorsal-height> I<length>
 
-###
 
-=item C<font-family> I<>
+The height of the boxes drawn to contain "dorsal" vertebrae,
+i.e. those after the anchor point.
 
-###
+=item C<dorsal-width> I<length>
 
-=item C<font-size> I<>
+The width of the boxes drawn to contain "dorsal" vertebrae,
+i.e. those after the anchor point.
 
-###
+=item C<font-family> I<font>
 
-=item C<height> I<>
+The font family to be used for captions, including taxa and specimen
+numbers. Taxon names are rendered in the italic variant of the font,
+specimen numbers in the regular font.
 
-###
+The font family may be specified by a list of family-names, as in SVG
+and CSS.
+See http://www.w3.org/TR/SVG11/types.html#DataTypeListOfFamilyNames
+
+=item C<font-size> I<length>
+
+The font size to be used for captions.
+
+=item C<height> I<length>
+
+The height of the entire picture to be generated.
 
 =item C<state-X-color> I<>
 
@@ -176,7 +211,7 @@ altogether by setting it to the same as the background colour.
 
 =item C<width> I<>
 
-###
+The width of the entire picture to be generated.
 
 =back
 
