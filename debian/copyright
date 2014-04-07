@@ -1,7 +1,7 @@
 Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?view=markup&pathrev=135
 Maintainer: Mike Taylor <mike@miketaylor.org.uk>
 Source: https://github.com/MikeTaylor/vcd2svg
-Name: VCD
+Name: SVG::VCD
 
 Files: *
 Copyright: 2013-2014, Mike Taylor <mike@miketaylor.org.uk>
