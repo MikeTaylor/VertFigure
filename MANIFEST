@@ -12,7 +12,7 @@ examples/pbj/README
 examples/pbj/pbj-phylogeny.svg
 examples/pbj/pbj-phylogeny.tre
 examples/pbj/pbj.vcd
-lib/VCD.pm
-lib/VCD/Format.pm
-lib/VCD/Taxon.pm
-t/VCD.t
+lib/SVG/VCD.pm
+lib/SVG/VCD/Format.pm
+lib/SVG/VCD/Taxon.pm
+t/SVG-VCD.t
