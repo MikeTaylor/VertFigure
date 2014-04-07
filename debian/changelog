@@ -1,5 +1,12 @@
+libvcd-perl (0.2-1) unstable; urgency=low
+
+  * Upstream.
+
+ -- Mike Taylor <mike@miketaylor.org.uk>  Mon, 07 Apr 2014 09:27:12 +0100
+
 libvcd-perl (0.1-1) unstable; urgency=low
 
   * Initial Release.
 
  -- Mike Taylor <mike@miketaylor.org.uk>  Thu, 6 Feb 2014 14:52:05 +0000
+

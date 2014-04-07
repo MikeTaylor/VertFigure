@@ -4,11 +4,11 @@ TODO
 	- Move more of the functionality in the bin/vcd2svg script
 	  down into the library.
 	- Documentation for the library.
-	- Documentation for the VCD file format.
-	- Documentation of the examples.
 	- Add ability to draw atlas/axis shapes.
+	- Add ability to draw key of glyphs.
 
-0.2  [IN PROGRESS]
+0.2  Mon Apr  7 09:26:03 BST 2014
+	- First public release.
 
 0.1  Thu Feb  6 11:12:35 2014
 	- original version; created by h2xs 1.23 with options
