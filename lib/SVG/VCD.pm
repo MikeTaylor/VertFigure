@@ -1,9 +1,9 @@
-package VCD;
+package SVG::VCD;
 
 use strict;
 use warnings;
 use IO::File;
-use VCD::Taxon;
+use SVG::VCD::Taxon;
 
 
 our $VERSION = 0.2;
@@ -47,13 +47,13 @@ sub parse {
 	    next;
 	}
 	if ($key eq "taxon" && keys %fields > 1) {
-	    push @{ $this->{taxa} }, new VCD::Taxon(%fields);
+	    push @{ $this->{taxa} }, new SVG::VCD::Taxon(%fields);
 	    %fields = ();
 	}
 	$fields{$key} = $value;
     }
 
-    push @{ $this->{taxa} }, new VCD::Taxon(%fields);
+    push @{ $this->{taxa} }, new SVG::VCD::Taxon(%fields);
     $f->close();
 }
 
