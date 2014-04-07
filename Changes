@@ -7,8 +7,9 @@ TODO
 	- Add ability to draw atlas/axis shapes.
 	- Add ability to draw key of glyphs.
 
-0.3  [IN PROGRESS]
-	- ### Move top-level VCD module down into SVG::VCD
+0.3  Mon Apr  7 09:48:04 BST 2014
+	- Move top-level VCD module down into SVG::VCD. This is more
+	  polite for CPAN.
 
 0.2  Mon Apr  7 09:26:03 BST 2014
 	- First public release.
