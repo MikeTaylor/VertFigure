@@ -5,7 +5,7 @@ use warnings;
 use Getopt::Std;
 use Data::Dumper; 
 use SVG;
-use VCD;
+use SVG::VCD;
 
 my %options;
 if (!getopts('d', \%options) || @ARGV != 1) {
@@ -20,7 +20,7 @@ if (@ARGV != 1) {
     exit 1;
 }
 
-my $vcd = new VCD($ARGV[0]);
+my $vcd = new SVG::VCD($ARGV[0]);
 if ($options{d}) {
     print Dumper($vcd);
     exit;
@@ -193,7 +193,7 @@ input is interpreted as expected.
 
 =head1 SEE ALSO
 
-VCD::Format - description of the input file format.
+SVG::VCD::Format - description of the input file format.
 
 =head1 AUTHOR
 
