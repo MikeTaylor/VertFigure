@@ -20,3 +20,5 @@ sub MY::postamble { q[
 	perl -I lib bin/vcd2svg $< > $@
 	chmod 444 $@
 ]; }
+
+# Note to self: dpkg-buildpackage -us -uc -rfakeroot
