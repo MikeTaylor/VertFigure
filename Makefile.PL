@@ -17,6 +17,6 @@ WriteMakefile(
 sub MY::postamble { q[
 %.svg: %.vcd bin/vcd2svg
 	rm -f $@
-	m4 $< | perl -I lib bin/vcd2svg - > $@
+	perl -I lib bin/vcd2svg $< > $@
 	chmod 444 $@
 ]; }
