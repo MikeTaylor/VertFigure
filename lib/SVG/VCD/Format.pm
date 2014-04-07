@@ -1,8 +1,8 @@
-package VCD::Format;
+package VSG::VCD::Format;
 
 =head1 NAME
 
-VCD::Format - format of .vcd (vertebral column description) files
+SVG::VCD::Format - format of .vcd (vertebral column description) files
 
 =head1 SYNOPSIS
 
