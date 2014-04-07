@@ -21,7 +21,7 @@ sub MY::postamble { q[
 	chmod 444 $@
 
 clean::
-	rm -f debian/files debian/libvcd-perl debian/libvcd-perl.debhelper.log debian/libvcd-perl.substvars \
+	rm -rf debian/files debian/libvcd-perl debian/libvcd-perl.debhelper.log debian/libvcd-perl.substvars \
 		examples/bifurcation/bifurcation.svg examples/pbj/pbj.svg \
 		lib/VCD/Format.html lib/VCD/pod2htmd.tmp lib/VCD/pod2htmi.tmp
 ]; }
