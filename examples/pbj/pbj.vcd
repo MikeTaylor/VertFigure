@@ -23,17 +23,20 @@
 *state-X-polygon: 0,1 0,0 1,0 1,1
 *state---polygon: 0.1,0.5 0.1,0.6 0.9,0.6 0.9,0.5
 
-define(PNEUMATIC,dnl
-Taxon: $1
-Data: |$2
-)dnl
-define(APNEUMATIC,PNEUMATIC($1,---))dnl
+Taxon: Pterosauria
+Data: |---
 
-APNEUMATIC(Pterosauria)
-APNEUMATIC(Ornithischia)
-PNEUMATIC(Theropoda,XX-)
-APNEUMATIC(/Basal sauropodomorphs)
-APNEUMATIC(Mamenchisaurus)
+Taxon: Ornithischia
+Data: |---
+
+Taxon: Theropoda
+Data: |XX-
+
+Taxon: /Basal sauropodomorphs
+Data: |---
+
+Taxon: Mamenchisaurus
+Data: |---
 
 Taxon: "Bothriospondylus"
 Specimen: NHM 2599
@@ -71,7 +74,8 @@ Citation: Torcida Fernández-Baldor et al. 2011
 Data: |X--
 # proximal
 
-APNEUMATIC(Dicraeosaurus)
+Taxon: Dicraeosaurus
+Data: |---
 
 Taxon: Apatosaurus
 Specimen: AMNH 222
@@ -157,7 +161,8 @@ Citation: Gilmore (1932)
 Data: |XX-
 # 19
 
-APNEUMATIC(Camarasaurus)
+Taxon: Camarasaurus
+Data: |---
 
 Taxon: Giraffatitan
 Specimen: MB.R.5000
@@ -225,7 +230,8 @@ Citation: Fronimos (2011)
 Data: |X--
 # proximal
 
-APNEUMATIC(Opisthocoelicaudia)
+Taxon: Opisthocoelicaudia
+Data: |---
 
 Taxon: Neuquensaurus
 Specimen: MCS-5
