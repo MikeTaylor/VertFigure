@@ -86,11 +86,16 @@ such as way as to represent cervicals vs. dorsals, pneumatic
 vs. apneumatic vertebrae, bifid vs. simple neural spines, or whatever
 other characteristic is of interest.
 
-One character in the data is special: the vertical bar (C<|>)
-indicates the anchor point: a position within the vertebral column
-that is particular interest, such as the cervicodorsal transition, or
-the dorsosacral transition. The anchor points of all the vertebral
-columns will be horizontally aligned in the output.
+Two character in the data is special:
+
+First, the hyphen (C<->) indicates that no data is available for the
+vertebra in question, so nothing is drawn.
+
+Second, the vertical bar (C<|>) indicates the anchor point: a position
+within the vertebral column that is particular interest, such as the
+cervicodorsal transition, or the dorsosacral transition. The anchor
+points of all the vertebral columns will be horizontally aligned in
+the output.
 
 For consistency, in the configuration settings below this anchor point
 is always referred to as the "cervico-dorsal" transition, the
@@ -203,19 +208,39 @@ C<state-X-polygon> pairs of settings. C<state-X-color> specifies what
 color to use for drawing vertebrae of the state corresponding with the
 characters I<X>.
 
-=item C<state-X-polygon> I<>
+=item C<state-X-polygon> I<list-of-points>
 
-###
+This specifies how vertebrae with state I<X> are drawn within their
+boxes. It is specified as a space-separated sequence of I<x>,I<y>
+pairs, each representing a point within a notional 1.0-by-1.0 space; a
+polyline between each of these points in order and returning to the
+first point is drawn and filled in the colour specified by the
+corresponding C<state-X-color> setting.
 
-=item C<taxon-height> I<>
+The x-coordinate runs from left to right; the y-coordinate runs from
+top to bottom.
 
-###
+Examples:
 
-=item C<text-y-offset> I<>
+C<0,0 0,1 1,1 1,0> simply fills the box with solid color.
 
-###
+C<0,0 0.5,1 1,0> draws a triangle pointing downwards.
 
-=item C<width> I<>
+C<0.1,0.3 0.9,0.5 0.1,0.7> draws a small, narrow triangle pointing to
+the right.
+
+=item C<taxon-height> I<length>
+
+The vertical spacing between consecutive taxa.
+
+=item C<text-y-offset> I<length> [default: C<0>]
+
+The distance to move text (i.e. taxon-and-specimen captions) down the
+drawing relative to the vertebrae (or up if the offset is
+negative). This can be useful to tweak alignment depending on what
+font-family and size are used.
+
+=item C<width> I<length>
 
 The width of the entire picture to be generated.
 
