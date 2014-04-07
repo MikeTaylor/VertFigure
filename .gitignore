@@ -1,6 +1,7 @@
-Makefile
 MYMETA.yml
+Makefile
+Makefile.old
 bifurcation.svg
-pbj.svg
 blib
+pbj.svg
 pm_to_blib
