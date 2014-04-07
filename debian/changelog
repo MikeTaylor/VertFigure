@@ -1,10 +1,10 @@
-libvcd-perl (0.2-1) unstable; urgency=low
+libsvg-vcd-perl (0.2-1) unstable; urgency=low
 
   * Upstream.
 
  -- Mike Taylor <mike@miketaylor.org.uk>  Mon, 07 Apr 2014 09:27:12 +0100
 
-libvcd-perl (0.1-1) unstable; urgency=low
+libsvg-vcd-perl (0.1-1) unstable; urgency=low
 
   * Initial Release.
 
