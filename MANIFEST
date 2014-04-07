@@ -6,10 +6,13 @@ Makefile.PL
 README
 bin/vcd2svg
 examples/README
+examples/bifurcation/README
 examples/bifurcation/bifurcation.vcd
+examples/pbj/README
 examples/pbj/pbj-phylogeny.svg
 examples/pbj/pbj-phylogeny.tre
 examples/pbj/pbj.vcd
 lib/VCD.pm
+lib/VCD/Format.pm
 lib/VCD/Taxon.pm
 t/VCD.t
