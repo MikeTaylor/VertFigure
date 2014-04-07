@@ -1,4 +1,4 @@
-Source: libvcd-perl
+Source: libsvg-vcd-perl
 Section: perl
 Priority: optional
 Maintainer: Mike Taylor <mike@miketaylor.org.uk>
@@ -7,7 +7,7 @@ Build-Depends-Indep: perl
 Standards-Version: 3.9.2
 Homepage: https://github.com/MikeTaylor/vcd2svg
 
-Package: libvcd-perl
+Package: libsvg-vcd-perl
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}
 Description: Generate schematic illustrations of vertebral columns
