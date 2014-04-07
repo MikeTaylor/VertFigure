@@ -1,4 +1,4 @@
-package VCD::Taxon;
+package SVG::VCD::Taxon;
 
 use strict;
 use warnings;
