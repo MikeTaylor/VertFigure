@@ -86,7 +86,7 @@ such as way as to represent cervicals vs. dorsals, pneumatic
 vs. apneumatic vertebrae, bifid vs. simple neural spines, or whatever
 other characteristic is of interest.
 
-Two character in the data is special:
+Two characters in the data are special:
 
 First, the hyphen (C<->) indicates that no data is available for the
 vertebra in question, so nothing is drawn.
