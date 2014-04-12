@@ -6,7 +6,7 @@ use IO::File;
 use SVG::VCD::Taxon;
 
 
-our $VERSION = 0.3;
+our $VERSION = 0.4;
 
 
 sub new {
