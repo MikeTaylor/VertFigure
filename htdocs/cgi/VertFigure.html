@@ -51,7 +51,7 @@ my $output;
 exit 0 if !$q->param("submit");
 
 my $tmpfile = "/tmp/VertFigure.$$";
-my $cmd = "perl -I $dir/lib $dir/bin/VertFigure - > $tmpfile"
+my $cmd = "perl -I $dir/lib $dir/bin/VertFigure - > $tmpfile";
 open F, "| $cmd" or die "can't open VertFigure ($cmd): $!";
 print F $vcd;
 close F or die "couldn't run VertFigure: $!";
