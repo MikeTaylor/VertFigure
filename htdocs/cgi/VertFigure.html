@@ -1,0 +1,66 @@
+#!/usr/local/bin/perl -w
+
+use strict;
+use warnings;
+
+use CGI;
+
+my $dir = "/usr/local/src/other/VertFigure";
+
+my $q = CGI->new;
+print $q->header();
+
+my $vcd = $q->param("vcd");
+if (defined $vcd) {
+    open F, ">/tmp/VertFigure-source-$$.vcd";
+    print F $vcd;
+    close F;
+} else {
+    open F, "<$dir/examples/bifurcation/bifurcation.vcd";
+    $vcd = join('', <F>);
+    close F;
+}
+
+print <<__EOT__;
+<p>
+Enter your own VCD (vertebral column description) in the area below,
+or edit the one provided. When ready, hit the Submit button to see
+how it renders.
+</p>
+<p>
+There is no "save" facility: when you have your VCD working the way
+you want, just copy it and paste it into a file.
+</p>
+<p>
+Yes, this is ugly. But it works.
+</p>
+<form method="post">
+<textarea name="vcd" cols="80" rows="20">
+$vcd
+</textarea>
+<br/>
+<input name="submit" type="submit"/>
+</form>
+__EOT__
+
+my $output;
+exit 0 if !$q->param("submit");
+
+my $tmpfile = "/tmp/VertFigure.$$";
+open F, "| perl -I $dir/lib $dir/bin/VertFigure - > $tmpfile" or die "can't open VertFigure: $!";
+print F $vcd;
+close F or die "couldn't run VertFigure: $!";
+open F, "<$tmpfile";
+$output = join('', <F>);
+close F;
+unlink $tmpfile;
+
+print "<hr/>\n";
+print "<p>Rendered diagram:</p>\n";
+print $output;
+print "<hr/>\n";
+print "<p>SVG source for you to copy and save in a file:</p>\n";
+$output =~ s/&/&amp;/g;
+$output =~ s/>/&gt;/g;
+$output =~ s/</&lt;/g;
+print "<pre>$output</pre>\n";
