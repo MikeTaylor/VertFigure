@@ -161,11 +161,11 @@ sub compile_points {
 
 =head1 NAME
 
-vcd2svg - generate schematic illustrations of vertebral columns
+VertFigure - generate schematic illustrations of vertebral columns
 
 =head1 SYNOPSIS
 
-vcd2svg
+VertFigure
 [
 -d
 ]
@@ -173,7 +173,7 @@ I<VCD--file>
 
 =head1 DESCRIPTION
 
-C<vcd2svg>
+C<VertFigure>
 reads a named file in VCD (Vertebral Column Description) format, and
 writes an illustration of the described vertebral columns in SVG
 (Scalable Vector Graphics) format. This is useful for preparing
