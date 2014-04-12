@@ -9,7 +9,7 @@ Homepage: https://github.com/MikeTaylor/VertFigure
 
 Package: libsvg-vcd-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}, ${perl:Depends}, libsvg-perl
 Description: Generate schematic illustrations of vertebral columns
  This project contains VertFigure, a program for generating schematic
  illustrations of vertebral columns.  Input is in the new VCD
