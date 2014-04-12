@@ -68,4 +68,4 @@ print "<p>SVG source for you to copy and save in a file:</p>\n";
 $output =~ s/&/&amp;/g;
 $output =~ s/>/&gt;/g;
 $output =~ s/</&lt;/g;
-print "<pre>$output</pre>\n";
+print qq[<textarea cols="80" rows="20">$output</textarea>\n];
