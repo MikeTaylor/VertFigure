@@ -4,7 +4,7 @@ MANIFEST
 MANIFEST.SKIP
 Makefile.PL
 README
-bin/vcd2svg
+bin/VertFigure
 examples/README
 examples/bifurcation/README
 examples/bifurcation/bifurcation.vcd

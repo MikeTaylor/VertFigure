@@ -1,6 +1,6 @@
 Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?view=markup&pathrev=135
 Maintainer: Mike Taylor <mike@miketaylor.org.uk>
-Source: https://github.com/MikeTaylor/vcd2svg
+Source: https://github.com/MikeTaylor/VertFigure
 Name: SVG::VCD
 
 Files: *

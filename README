@@ -1,10 +1,10 @@
-vcd2vsg -- generate schematic illustrations of vertebral columns
+VertFigure -- generate schematic illustrations of vertebral columns
 Copyright 2013-2014 Mike Taylor <mike@miketaylor.org.uk>
 Licensed under the Gnu General Public Licence v3.0
 
 --
 
-This project contains vcd2svg, a program for generating schematic
+This project contains VertFigure, a program for generating schematic
 illustrations of vertebral columns, visually similar to that of
 Wedel (2009:supplementary figure 1):
 	https://svpow.files.wordpress.com/2009/02/wedel-2009-supplementary-fig-1.jpg
@@ -19,7 +19,7 @@ Two such inputs (the ones we used for the 2013 papers) are
 "bifurcation.vcd" and "pbj.vcd", and can be found in the "examples"
 area.
 
-These files are translated into SVG by the bin/vcd2svg script.
+These files are translated into SVG by the bin/VertFigure script.
 This is written in Perl, using the SVG library.
 
 

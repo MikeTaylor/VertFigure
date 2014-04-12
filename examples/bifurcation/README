@@ -54,6 +54,6 @@ can be seen at
 http://svpow.com/papers-by-sv-powsketeers/wedel-and-taylor-2013-on-sauropod-neural-spine-bifurcation/
 
 It would have been better for both of these additions to be done by
-vcd2svg rather than needing a manual pass afterwards: if we'd had more
-time we probably would have enhanced the program accordingly, but we
-were in a hurry to get submitted. A future release might fix this.
+VertFigure rather than needing a manual pass afterwards: if we'd had
+more time we probably would have enhanced the program accordingly, but
+we were in a hurry to get submitted. A future release might fix this.
