@@ -1,0 +1,2 @@
+To run the CGI script from the command-line on ringo:
+PERL5LIB=/Users/mike/perl5/lib/perl5 indir ~/git/other/VertFigure perl -I lib htdocs/cgi/VertFigure.html submit=1
