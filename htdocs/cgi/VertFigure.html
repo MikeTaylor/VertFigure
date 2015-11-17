@@ -51,21 +51,34 @@ my $output;
 exit 0 if !$q->param("submit");
 
 my $outfile = "/tmp/VertFigure.out.$$";
-my $cmd = "perl -I $dir/lib $dir/bin/VertFigure - > $outfile";
+my $errfile = "/tmp/VertFigure.out.$$";
+my $cmd = "perl -I $dir/lib $dir/bin/VertFigure - > $outfile 2> $errfile";
 open F, "| $cmd" or die "can't open VertFigure ($cmd): $!";
 print F $vcd;
-close F or die "couldn't run VertFigure: $!";
-open F, "<$outfile";
-$output = join('', <F>);
-close F;
-unlink $outfile;
+if (close F) {
+    open F, "<$outfile";
+    $output = join('', <F>);
+    close F;
 
-print "<hr/>\n";
-print "<p>Rendered diagram:</p>\n";
-print $output;
-print "<hr/>\n";
-print "<p>SVG source for you to copy and save in a file:</p>\n";
-$output =~ s/&/&amp;/g;
-$output =~ s/>/&gt;/g;
-$output =~ s/</&lt;/g;
-print qq[<textarea cols="80" rows="20">$output</textarea>\n];
+    print "<hr/>\n";
+    print "<p>Rendered diagram:</p>\n";
+    print $output;
+    print "<hr/>\n";
+    print "<p>SVG source for you to copy and save in a file:</p>\n";
+    $output =~ s/&/&amp;/g;
+    $output =~ s/>/&gt;/g;
+    $output =~ s/</&lt;/g;
+    print qq[<textarea cols="80" rows="20">$output</textarea>\n];
+} else {
+    open F, "<$errfile";
+    $output = join('', <F>);
+    close F;
+
+    $output =~ s/&/&amp;/g;
+    $output =~ s/>/&gt;/g;
+    $output =~ s/</&lt;/g;
+    print "<hr/>\n";
+    print "<p style='color:red'>Error: $output</p>\n";
+}
+
+unlink $outfile, $errfile;
