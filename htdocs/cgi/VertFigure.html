@@ -50,15 +50,15 @@ __EOT__
 my $output;
 exit 0 if !$q->param("submit");
 
-my $tmpfile = "/tmp/VertFigure.$$";
-my $cmd = "perl -I $dir/lib $dir/bin/VertFigure - > $tmpfile";
+my $outfile = "/tmp/VertFigure.out.$$";
+my $cmd = "perl -I $dir/lib $dir/bin/VertFigure - > $outfile";
 open F, "| $cmd" or die "can't open VertFigure ($cmd): $!";
 print F $vcd;
 close F or die "couldn't run VertFigure: $!";
-open F, "<$tmpfile";
+open F, "<$outfile";
 $output = join('', <F>);
 close F;
-unlink $tmpfile;
+unlink $outfile;
 
 print "<hr/>\n";
 print "<p>Rendered diagram:</p>\n";
