@@ -9,7 +9,7 @@ my $hostname = `hostname`;
 chomp($hostname);
 my $dir = ($hostname eq "sauropod" ?
 	   "/home/mike/VertFigure" :
-	   "/usr/local/src/other/VertFigure");
+	   "/Users/mike/git/other/VertFigure");
 
 my $q = CGI->new;
 print $q->header();
