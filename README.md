@@ -8,7 +8,7 @@ Licensed under the Gnu General Public Licence v3.0
 
 This project contains VertFigure, a program for generating schematic illustrations of vertebral columns, visually similar to that of [Wedel (2009:supplementary figure 1)](https://svpow.files.wordpress.com/2009/02/wedel-2009-supplementary-fig-1.jpg). It was first written to make [Wedel and Taylor (2013a: figure 9)](https://svpow.files.wordpress.com/2013/03/wedel-and-taylor-2013-bifurcation-figure-9-bifurcatogram.jpg) and then re-used to make [Wedel and Taylor (2013b: figure 2)](https://svpow.files.wordpress.com/2013/11/wedel-taylor-2013b-figure-2-phylogenetic-distribution-of-caudal-pneumaticity.jpg).
 
-Input is in the VCD (Vertebral Column Description) format, which is defined for the first time in this project (but not yet documented). Two such inputs (the ones we used for the 2013 papers) are `bifurcation.vcd` and `pbj.vcd`, and can be found in [the `examples` area](examples).
+Input is in the VCD (Vertebral Column Description) format, which is defined for the first time in this project, and [documented in POD](https://metacpan.org/pod/VSG::VCD::Format). Two such inputs (the ones we used for the 2013 papers) are `bifurcation.vcd` and `pbj.vcd`, and can be found in [the `examples` area](examples).
 
 These files are translated into SVG by [the `bin/VertFigure` script](bin/VertFigure). This is written in Perl, using the SVG library.
 
