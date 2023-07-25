@@ -12,6 +12,9 @@ Input is in the VCD (Vertebral Column Description) format, which is defined for 
 
 These files are translated into SVG by [the `bin/VertFigure` script](bin/VertFigure). This is written in Perl, using the SVG library.
 
+You can play with this software online, without downloading or building anything, at
+http://vertfigure.svpow.com/cgi/VertFigure.html
+
 
 ## References
 
